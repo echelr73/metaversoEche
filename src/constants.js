@@ -1,5 +1,5 @@
 // Creating the main cube texture
-var wallTexture = new THREE.TextureLoader().load('src/textures/brick-wall.jpg');
+var wallTexture = new THREE.TextureLoader().load('public/textures/brick-wall.jpg');
 wallTexture.wrapS = THREE.RepeatWrapping;
 wallTexture.wrapT = THREE.RepeatWrapping;
 wallTexture.repeat.set(1, 1);
@@ -8,7 +8,7 @@ wallTexture.repeat.set(1, 1);
 var wallMaterial = new THREE.MeshLambertMaterial({ map: wallTexture });
 
 // Creating the wood cube texture
-var woodTexture = new THREE.TextureLoader().load('src/textures/valla.jpg');
+var woodTexture = new THREE.TextureLoader().load('public/textures/valla.jpg');
 woodTexture.wrapS = THREE.RepeatWrapping;
 woodTexture.wrapT = THREE.RepeatWrapping;
 woodTexture.repeat.set(1, 1);
@@ -17,7 +17,7 @@ woodTexture.repeat.set(1, 1);
 var woodMaterial = new THREE.MeshLambertMaterial({ map: woodTexture });
 
 // Creating the roof texture
-var roofTexture = new THREE.TextureLoader().load('src/textures/cucurucho3.jpg');
+var roofTexture = new THREE.TextureLoader().load('public/textures/cucurucho3.jpg');
 roofTexture.wrapS = THREE.RepeatWrapping;
 roofTexture.wrapT = THREE.RepeatWrapping;
 roofTexture.repeat.set(1, -1);
@@ -26,7 +26,7 @@ roofTexture.repeat.set(1, -1);
 var roofMaterial = new THREE.MeshLambertMaterial({ map: roofTexture });
 
 // Creating the ice cream texture
-var iceCreamTexture = new THREE.TextureLoader().load('src/textures/helado.jpg');
+var iceCreamTexture = new THREE.TextureLoader().load('public/textures/helado.jpg');
 iceCreamTexture.wrapS = THREE.RepeatWrapping;
 iceCreamTexture.wrapT = THREE.RepeatWrapping;
 iceCreamTexture.repeat.set(0.8, 0.8);
@@ -35,7 +35,7 @@ iceCreamTexture.repeat.set(0.8, 0.8);
 var iceCreamMaterial = new THREE.MeshLambertMaterial({ map: iceCreamTexture });
 
 // Creating the grass texture
-var grassTexture = new THREE.TextureLoader().load('src/textures/grass.jpg');
+var grassTexture = new THREE.TextureLoader().load('public/textures/grass.jpg');
 grassTexture.wrapS = THREE.RepeatWrapping;
 grassTexture.wrapT = THREE.RepeatWrapping;
 grassTexture.repeat.set(4, 4);
@@ -44,7 +44,7 @@ grassTexture.repeat.set(4, 4);
 var grassMaterial = new THREE.MeshLambertMaterial({ map: grassTexture });
 
 // Creating the tribune texture
-var tribuneTexture = new THREE.TextureLoader().load('src/textures/tribuna.jpg');
+var tribuneTexture = new THREE.TextureLoader().load('public/textures/tribuna.jpg');
 tribuneTexture.wrapS = THREE.RepeatWrapping;
 tribuneTexture.wrapT = THREE.RepeatWrapping;
 tribuneTexture.repeat.set(0.5, 0.5);
@@ -84,12 +84,12 @@ export const materialElement = {
 
 // Mapping textures with their corresponding names
 export const textureElement = {
-    "wallMaterial": "src/textures/brick-wall.jpg",
-    "woodMaterial": "src/textures/valla.jpg",
-    "roofMaterial": "src/textures/cucurucho3.jpg",
-    "iceCreamMaterial": "src/textures/helado.jpg",
-    "grassMaterial": "src/textures/grass.jpg",
-    "tribuneMaterial": "src/textures/tribuna.jpg"
+    "wallMaterial": "public/textures/brick-wall.jpg",
+    "woodMaterial": "public/textures/valla.jpg",
+    "roofMaterial": "public/textures/cucurucho3.jpg",
+    "iceCreamMaterial": "public/textures/helado.jpg",
+    "grassMaterial": "public/textures/grass.jpg",
+    "tribuneMaterial": "public/textures/tribuna.jpg"
 };
 
 export function createBuild(building) {
