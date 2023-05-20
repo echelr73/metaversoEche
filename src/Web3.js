@@ -6,6 +6,7 @@ const blockchain = new Promise((res, rej) => {
     const h6ActualSupply = document.getElementById('actualSupply');
     const h6MaxSupply = document.getElementById('maxSupply');
     const buttonExt = document.getElementById('extraction');
+    buttonExt.style.display = "none";
 
     window.addEventListener('load', async () => {
         // If Metamask is not available
@@ -22,8 +23,8 @@ const blockchain = new Promise((res, rej) => {
             contract.methods.getOwner().call({ from: accounts[0] }).then((address) => {
                 console.log("-> Current owner is: ", address);
                 h6User.innerHTML = accounts[0];
-                if (accounts[0] != address) buttonExt.style.display = "none";
-                else buttonExt.style.display = "block";
+                if (accounts[0] == address) buttonExt.style.display = "block";
+                else  buttonExt.style.display = "none";
             });
         });
 
