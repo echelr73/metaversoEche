@@ -278,7 +278,6 @@ function extraction() {
       document.getElementById('spinnerContainer').classList.add('d-none');
       textToast.innerHTML = "Ethers extraction completed";
       myToast.show();
-      console.log("Ethers extraction completed");
     });
   });
 

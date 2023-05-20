@@ -21,7 +21,6 @@ const blockchain = new Promise((res, rej) => {
         // Get my Metamask address
         web3.eth.requestAccounts().then((accounts) => {
             contract.methods.getOwner().call({ from: accounts[0] }).then((address) => {
-                console.log("-> Current owner is: ", address);
                 h6User.innerHTML = accounts[0];
                 if (accounts[0] == address) buttonExt.style.display = "block";
                 else  buttonExt.style.display = "none";
